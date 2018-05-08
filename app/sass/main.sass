@@ -1,3 +1,4 @@
+@import "theme"
 @import "vars"
 @import "fonts"
 @import "libs"
@@ -56,6 +57,12 @@ ul
 	// HEADER
 //*****************
 
+.logo	
+	.img-responsive
+		margin-top: 10px
+	
+.logo img
+	max-width: 200px
 
 .navigation-top
 	background: linear-gradient(to bottom, rgb(253,253,253) 62%,rgb(252,252,252) 75%,rgb(252,252,252) 75%,rgb(241,241,241) 100%)		
@@ -76,6 +83,10 @@ ul
 		text-transform: uppercase
 	&:hover a
 		color: $accent
+
+.current_page_item
+	a
+		color: $accent	
 
 .social
 	padding: 0 15px
@@ -102,7 +113,7 @@ ul
 			border-bottom: 1px solid #e5e5e5
 			// padding: 38px 0px
 			&:hover
-				background-color: #f05440
+				background-color: $accent
 				color: #fff
 		
 
@@ -133,10 +144,12 @@ ul
 		height: 31px	
 		&:hover
 			color: #000000
-	.active
+	.current
 			color: #fff
-			background: #f05440
+			background: $accent
 			border-radius: 100px
+	.screen-reader-text
+		display: none
 
 
 //********************************
@@ -186,10 +199,10 @@ ul
 
 .post-descr
 	padding: 20px
-	color: $accent
 
 .post-date
 	text-align: right
+	color: $accent
 
 
 //********************************
@@ -201,20 +214,22 @@ aside
 	.content-header
 		font-size: 35px
 
-.sidebar-list
-	padding-left: 0
-	li
-		display: block
-		a
+.sidebar-item
+	margin-bottom: 20px
+	ul
+		padding-left: 0
+		li
 			display: block
-			padding: 10px 0px
-			font-weight: 400
-			font-size: 17px
-			color: #000000
-			border-bottom: 1px solid #e5e5e5
-			&:hover
-				color: #f05440
-				text-decoration: none
+			a
+				display: block
+				padding: 10px 0px
+				font-weight: 400
+				font-size: 17px
+				color: #000000
+				border-bottom: 1px solid #e5e5e5
+				&:hover
+					color: $accent
+					text-decoration: none
 
 //***********************************
 //          INFO
@@ -257,7 +272,7 @@ aside
 		position: absolute
 		width: 82px
 		height: 63px
-		background: url(../img/connect-icons.png) no-repeat
+		background: url(assets/img/connect-icons.png) no-repeat
 		top: -42px
 		left: 38%
 		-webkit-transition: top ease-in-out 0.5s
@@ -267,8 +282,8 @@ aside
 		transition: top 0.4s linear 0s, height 0.4s linear 0s
 	&:hover
 		color: #fff
-		background-color: #f05440
-		border-color: #f05440
+		background-color: $accent
+		border-color: $accent
 
 .connect-btn:hover:before
 	display: block
@@ -323,7 +338,7 @@ footer.container-fluid
 	    line-height: 200%
 	    color: inherit
 	    &:hover
-	    	color: #f05440
+	    	color: $accent
 	    	text-decoration: none
 
 
@@ -339,7 +354,7 @@ footer.container-fluid
 		margin-top: 20px
 		line-height: 140%
 	a
-		color: #f05440
+		color: $accent
 		border-bottom: 1px solid #f8d4cf
 	.footer-contacts li
 		display: block
