@@ -90,15 +90,20 @@ ul
 
 .social
 	padding: 0 15px
-	a
-		display: block
-		margin: 0px 12px
-		i
-			line-height: 60px
-			font-size: 17px
-			color: $text
-		&:hover i
-			color: $accent
+	li
+		line-height: 60px
+		a
+			display: block
+			padding: 0 10px
+			img
+				height: 22px
+				width: 22px
+				color: $text
+				opacity: .5
+			&:hover img
+				opacity: 1
+				color: $accent
+	
 
 .main-nav
 	li
@@ -135,7 +140,7 @@ ul
 	.page-numbers
 		display: inline-block
 		font-family: $default-font
-		font-size: 23px
+		font-size: 20px
 		font-weight: 400
 		line-height: 31px
 		color: #7b7b7b
@@ -150,6 +155,8 @@ ul
 			border-radius: 100px
 	.screen-reader-text
 		display: none
+	.prev
+		margin-right: 15px
 
 
 //********************************
@@ -200,9 +207,26 @@ ul
 .post-descr
 	padding: 20px
 
-.post-date
-	text-align: right
-	color: $accent
+.post-descr-info
+	padding-left: 0
+	position: relative
+	.post-date
+		color: $accent
+		text-align: right
+		display: block
+	.post-categories
+		text-align: left
+		position: absolute
+		left: 0
+		padding: 0
+		li
+			display: inline-block
+			margin-right: 3px
+			padding: 0 7px
+			background-color: $accent
+			a
+				font-weight: bold
+				color: #ffffff
 
 
 //********************************
@@ -212,7 +236,7 @@ ul
 aside
 	padding-top: 50px
 	.content-header
-		font-size: 35px
+		font-size: 32px
 
 .sidebar-item
 	margin-bottom: 20px
@@ -221,8 +245,8 @@ aside
 		li
 			display: block
 			a
-				display: block
-				padding: 10px 0px
+				display: inline-block
+				padding: 10px 10px
 				font-weight: 400
 				font-size: 17px
 				color: #000000
@@ -230,6 +254,18 @@ aside
 				&:hover
 					color: $accent
 					text-decoration: none
+			span
+				position: relative
+				&::before
+					content: '|'
+					display: inline-block
+					position: absolute
+					height: 30px
+					font-size: 27px
+					top: -14px
+					left: -9px
+	.post-date
+		color: $accent
 
 //***********************************
 //          INFO
@@ -358,6 +394,9 @@ footer.container-fluid
 		border-bottom: 1px solid #f8d4cf
 	.footer-contacts li
 		display: block
+
+.footer-img
+	width: 70px
 
 
 @import "media" // Always at the end
