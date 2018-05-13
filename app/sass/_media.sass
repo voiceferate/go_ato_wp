@@ -5,27 +5,74 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .navigation-top
+    .header-mnu 
+      .menu-item 
+        a
+          font-size: 12px
+          letter-spacing: 0
+
+  .logo img
+    max-width: 160px
+    margin: 10px auto
+  
+  .logo .img-responsive
+    text-align: center
+
 
 // ≥992px
 +media-breakpoint-down(md)
+  .nav-menu
+    text-align: center
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .header-mnu
+    display: none
+
+  .header-mnu.side-showed
+    display: block
+    position: fixed
+    top: 0
+    left: 0
+    width: 70%
+    min-height: 100vh
+    background-color: transparentize($accent, .1)
+    z-index: 1000
+    li
+      display: block
+      margin-top: 25px
+      a
+        color: #fff
+        font-size: 18px !important
+        font-weight: lighter
+        &:hover
+          color: darken($accent, 25%)
+
+
+  .hamb
+    display: block
+    transition: all .5s
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .post-img-title
+    font-size: 16px
 
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 +media-breakpoint-up(sm)
+  .connect-btn
+    margin-bottom: 20px
 
 // ≤768px
 +media-breakpoint-up(md)
 
 // ≤992px
 +media-breakpoint-up(lg)
+
 
 // ≤1200px
 +media-breakpoint-up(xl)

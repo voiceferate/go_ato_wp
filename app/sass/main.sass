@@ -42,7 +42,7 @@ b, strong
 
 a
 	color: $text
-	text-decoration: none
+	text-decoration: underline
 	&:hover
 		text-decoration: none
 	
@@ -52,6 +52,7 @@ li
 
 ul
 	margin-bottom: 0
+	padding: 0
 
 //*****************
 	// HEADER
@@ -63,6 +64,7 @@ ul
 	
 .logo img
 	max-width: 200px
+	transition: all .3s
 
 .navigation-top
 	background: linear-gradient(to bottom, rgb(253,253,253) 62%,rgb(252,252,252) 75%,rgb(252,252,252) 75%,rgb(241,241,241) 100%)		
@@ -70,19 +72,22 @@ ul
 .nav-menu
 	line-height: 0
 
-.menu-item
-	display: inline-block
-	a
-		display: block
-		padding: 0 16px
-		color: $text
-		font-size: 14px
-		line-height: 60px
-		font-weight: 700
-		letter-spacing: 0.1em
-		text-transform: uppercase
-	&:hover a
-		color: $accent
+.header-mnu
+	position: relative
+	transition: all .7s ease-in
+	.menu-item
+		display: inline-block
+		a
+			display: block
+			padding: 0 16px
+			color: $text
+			font-size: 14px
+			line-height: 60px
+			font-weight: 700
+			letter-spacing: 0.1em
+			text-transform: uppercase
+		&:hover a
+			color: $accent
 
 .current_page_item
 	a
@@ -116,11 +121,61 @@ ul
 			line-height: 96px
 			border-right: 1px solid #e5e5e5
 			border-bottom: 1px solid #e5e5e5
-			// padding: 38px 0px
+			transition: all .6s
 			&:hover
 				background-color: $accent
 				color: #fff
-		
+
+
+	//preloader
+#p_prldr
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+  background: #CB356B
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B)
+	background: linear-gradient(to right, #BD3F32, #CB356B)
+	z-index: 30
+ 
+.contpre small
+	font-size: 18px
+ 
+.contpre
+	width: 250px
+	height: 100px
+	position: absolute
+	left: 50%
+	top: 48%
+	margin-left: -125px
+	margin-top: -75px
+	color: #fff
+	font-size: 30px
+	letter-spacing: 2px
+	text-align: center
+	line-height: 35px
+ 
+#p_prldr .svg_anm
+	position: absolute
+	width: 141px
+	height: 141px
+	background: url(assets/img/rings.svg) center center no-repeat
+	background-size: 141px    
+	top: -100px
+	left: 19%
+
+
+//hambubreger
+
+.hamb
+	display: none
+	.is-active
+		position: fixed
+		top: 20px
+		right: 20px
+
+
 
 //*************************************
 //            CONTENT
@@ -267,6 +322,15 @@ aside
 	.post-date
 		color: $accent
 
+#categories-3 li
+	display: inline-block
+	margin: 3px
+	background-color: #2988f1
+	line-height: .8
+	a
+		font-weight: bold
+		color: #ffffff
+
 //***********************************
 //          INFO
 //***********************************
@@ -282,7 +346,7 @@ aside
 			font-weight: 400
 			font-size: 40px
 			padding-right: 20px
-	.col-4
+	div
 		text-align: center
 
 .connect-btn
@@ -310,7 +374,7 @@ aside
 		height: 63px
 		background: url(assets/img/connect-icons.png) no-repeat
 		top: -42px
-		left: 38%
+		left: calc(50% - 41px)
 		-webkit-transition: top ease-in-out 0.5s
 		-moz-transition: all ease-in-out 1s
 		-o-transition: all ease-in-out 1s
@@ -347,35 +411,34 @@ footer
     height: 10px
     box-shadow: inset 0 32px 5px -27px rgba(0, 0, 0, 0.07)
     z-index: 50
-
-
-footer.container-fluid
-	padding-left: 0
-	padding-right: 0
-
+	h3
+		font-weight: 700
+		line-height: 260%
+		letter-spacing: 0.12em
+		text-transform: uppercase
+		color: inherit
+		font-size: 16px
 
 .footer-container-left
   background: #f3f3f3
   box-shadow: 17px 0px 21px -17px #C7C7C7
-  padding: 70px 0
+  padding-top: 70px
+  padding-bottom: 70px
 
 .footer-list
 	color: #000
-	.footer-list-link
-	    font-weight: 700
-      line-height: 260%
-	    letter-spacing: 0.12em
-	    text-transform: uppercase
-	    color: inherit
-	.footer-list-item
+	padding: 0
+	li
 		display: block
 		a
 	    font-size: 18px
-	    line-height: 200%
+	    line-height: 1.7
 	    color: inherit
 	    &:hover
 	    	color: $accent
 	    	text-decoration: none
+
+
 
 
 .footer-list__lefted
