@@ -14,5 +14,8 @@ $(function() {
         $('.header-mnu').toggleClass('side-showed')
     })
 
-
+    $('.main-nav li').magnificPopup({
+        type: 'inline',
+        closeOnContentClick: true
+    });
 });
