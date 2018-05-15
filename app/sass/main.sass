@@ -321,6 +321,7 @@ aside
 					left: -9px
 	.post-date
 		color: $accent
+		margin-left: 13px
 
 #categories-3 li
 	display: inline-block
@@ -341,7 +342,7 @@ aside
 		text-align: center
 
 .title
-	padding: 100px 0px 80px 0px
+	padding: 50px 0px 50px 0px
 	text-align: center
 	h2
 		display: inline-block
@@ -395,6 +396,23 @@ aside
 	width: 300px
 	display: block
 
+//**********************************
+//             PARTNERS
+//*********************************
+
+.partners
+	background-color: $light-gray-bg
+	padding-bottom: 20px
+	&-item
+		background-color: #fff
+		box-shadow: 2px 2px 11px 7px rgba(0, 0, 0, 0.07)
+	&-image
+		min-height: 200px
+		max-width: 250px
+		text-align: center
+	&-title
+		color: darken($accent, 15%)
+		text-align: center
 
 //**********************************
 //             FOTER
@@ -455,7 +473,6 @@ footer
 		line-height: 140%
 	a
 		color: $accent
-		border-bottom: 1px solid #f8d4cf
 	.footer-contacts li
 		display: block
 
@@ -465,12 +482,11 @@ footer
 
 .footer-img-block
 	vertical-align: top
-	span
+	p:first-of-type 
 		display: inline-block
 		width: 72%
 		vertical-align: top
 		font-size: 16px
-
 
 //********************************
 //        magnific popup

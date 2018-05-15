@@ -18,4 +18,14 @@ $(function() {
         type: 'inline',
         closeOnContentClick: true
     });
+
+    $(document).ready(function() {
+        var a = $('#recent-posts-3 li');
+        console.log(a)
+        for (var val of a) {
+            console.log($(val).find('span'))
+            $(val).find('a').append($(val).find('span'))
+        }
+    });
+
 });
