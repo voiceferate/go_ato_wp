@@ -2,6 +2,8 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+@import "owl.carousel.min"
+@import "owl.theme.default"
 
 ::placeholder
 	color: #666
@@ -215,6 +217,58 @@ ul
 
 
 //********************************
+//         SLIDER
+//********************************
+
+.slider-container
+	margin-top: 20px
+	padding: 0
+
+.slider
+	position: relative
+	min-height: 550px
+	justify-content: center
+	align-items: center
+	z-index: 90
+	&-title
+		font-family: $default-font
+		font-size: 40px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 100
+		color: #fff		
+	&-caption
+		font-family: $default-font
+		font-size: 18px
+		position: absolute
+		top: 60%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 100
+		color: #fff
+	&-img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 99
+		
+.bgd
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 200
+	background-color: rgba(0,0,0, .7)
+	
+		
+
+
+//********************************
 //         POST-news
 //********************************
 
@@ -225,6 +279,7 @@ ul
 	-moz-transition: all 0.4s ease-in-out
 	-o-transition: all 0.4s ease-in-out
 	transition: all 0.4s ease-in-out
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	&:hover
 		background: #ececec
 
@@ -332,6 +387,20 @@ aside
 		font-weight: bold
 		color: #ffffff
 
+.searchform
+	input[type=text]
+		border-radius: 3px
+		padding: 0 10px
+		input[type=text]:focus
+			outline: 2px solid $accent
+	input[type=submit]
+		border-radius: 3px
+		border: 1px solid lighten($accent, 15%)
+		background-color: $accent
+		color: #fff
+		
+	
+
 //***********************************
 //          INFO
 //***********************************
@@ -404,15 +473,20 @@ aside
 	background-color: $light-gray-bg
 	padding-bottom: 20px
 	&-item
+		padding: 13px 8px
 		background-color: #fff
 		box-shadow: 2px 2px 11px 7px rgba(0, 0, 0, 0.07)
+		max-height: 350px
+		overflow: hidden		
 	&-image
-		min-height: 200px
-		max-width: 250px
+		min-height: 150px
 		text-align: center
 	&-title
 		color: darken($accent, 15%)
 		text-align: center
+		letter-spacing: .05em
+	p
+		font-size: 13px
 
 //**********************************
 //             FOTER

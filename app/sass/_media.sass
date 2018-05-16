@@ -25,6 +25,13 @@
   .nav-menu
     text-align: center
 
+  .slider
+    min-height: 450px
+    &-caption
+      top: 65%
+    &-title
+      top: 45%
+
 // ≥768px
 +media-breakpoint-down(sm)
   .header-mnu
@@ -54,10 +61,26 @@
     display: block
     transition: all .5s
 
+  .slider
+    min-height: 400px
+    &-caption
+      top: 65%
+    &-title
+      top: 40%
+
 // ≥576px
 +media-breakpoint-down(xs)
   .post-img-title
     font-size: 16px
+  
+  .slider
+    min-height: 320px
+    &-caption
+      top: 25%
+      font-size: 14px
+    &-title
+      top: 15%
+      font-size: 20px
 
 
 /*==========  Mobile First  ==========*/
