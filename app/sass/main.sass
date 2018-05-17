@@ -215,6 +215,17 @@ ul
 	.prev
 		margin-right: 15px
 
+.page-links
+	li
+		display: block
+		a
+			color: $accent
+			font-size: 1.1em
+			&:hover
+				color: darken($accent, 10%) 
+
+
+
 
 //********************************
 //         SLIDER
@@ -226,26 +237,26 @@ ul
 
 .slider
 	position: relative
-	min-height: 550px
+	min-height: 650px
 	justify-content: center
 	align-items: center
 	z-index: 90
 	&-title
-		font-family: $default-font
+		font-family: $secondary-font
 		font-size: 40px
 		position: absolute
-		top: 50%
+		top: 10%
 		left: 50%
 		transform: translateX(-50%)
 		z-index: 100
-		color: #fff		
+		color: #fff
 	&-caption
 		font-family: $default-font
-		font-size: 18px
+		font-size: 22px
 		position: absolute
-		top: 60%
-		left: 50%
-		transform: translateX(-50%)
+		bottom: 10%
+		left: 10%
+		// transform: translateX(-50%)
 		z-index: 100
 		color: #fff
 	&-img
@@ -477,7 +488,8 @@ aside
 		background-color: #fff
 		box-shadow: 2px 2px 11px 7px rgba(0, 0, 0, 0.07)
 		max-height: 350px
-		overflow: hidden		
+		overflow: hidden
+		cursor: pointer
 	&-image
 		min-height: 150px
 		text-align: center

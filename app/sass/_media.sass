@@ -27,10 +27,25 @@
 
   .slider
     min-height: 450px
-    &-caption
-      top: 65%
     &-title
-      top: 45%
+      top: 20%
+      left: 10%
+      transform: translateX(0)
+      font-size: 36px
+      padding-right: 50px
+    &-caption
+      font-size: 24px
+  
+  aside .content-header
+    font-size: 28px
+
+  .sidebar-item
+    margin-bottom: 20px
+    ul
+      li
+        a
+          padding: 7px 7px
+          font-size: 14px
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -56,6 +71,16 @@
         &:hover
           color: darken($accent, 25%)
 
+  aside .content-header
+    font-size: 28px
+
+  .sidebar-item
+    margin-bottom: 20px
+    ul
+      li
+        a
+          padding: 7px 7px
+          font-size: 14px
 
   .hamb
     display: block
@@ -63,32 +88,60 @@
 
   .slider
     min-height: 400px
-    &-caption
-      top: 65%
     &-title
-      top: 40%
+      top: 10%
+      left: 10%
+      transform: translateX(0)
+      font-size: 30px
+      padding-right: 30px
+    &-caption
+      font-size: 20px
+      font-family: $secondary-font
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .post
+    margin: 0
+
   .post-img-title
     font-size: 16px
   
   .slider
-    min-height: 320px
-    &-caption
-      top: 25%
-      font-size: 14px
+    min-height: 280px
     &-title
-      top: 15%
-      font-size: 20px
+      top: 10%
+      left: 10%
+      transform: translateX(0)
+      font-size: 18px
+      padding-right: 10px
+    &-caption
+      font-size: 14px
+      font-family: $secondary-font
 
+  .slider
+    img
+      height: 100%
+    img.img-responsive
+      width: initial
+      max-width: initial
+  
+  .connect-btn
+    margin-bottom: 20px
+  .partners-title
+    font-size: 16px
+
+  .sidebar-item
+    margin-bottom: 20px
+    ul
+      li
+        a
+          padding: 7px 7px
+          font-size: 14px
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 +media-breakpoint-up(sm)
-  .connect-btn
-    margin-bottom: 20px
 
 // ≤768px
 +media-breakpoint-up(md)
