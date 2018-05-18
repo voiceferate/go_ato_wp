@@ -30,8 +30,8 @@ gulp.task('styles', function() {
 	.pipe(rename('style.css'))
 	// .pipe(rename({ suffix: '.min', prefix : '' }))
 	
-	// .pipe(autoprefixer(['last 15 versions']))
-	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+	.pipe(autoprefixer(['last 15 versions']))
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('../'))
 	.pipe(browsersync.reload( {stream: true} ))
 });

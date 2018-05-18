@@ -7,7 +7,7 @@
 	<section class="container">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-8 col-xl-8 content">
-							<h2>Посилання на різні закони і документи, які регулюють діяльність і можуть бути корисними для членів спілки</h2>
+							<h2 class="content-header content-header__smaller">Посилання на різні закони і документи, які регулюють діяльність і можуть бути корисними для членів спілки</h2>
 								<article class="post">
 									<div class="post-descr">
 										<?php wp_nav_menu([

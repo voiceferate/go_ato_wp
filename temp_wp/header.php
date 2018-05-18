@@ -59,21 +59,21 @@
 							'container' => 'null'
 						]); ?>
 					</div>
-					<div class=" col-sm-11 col-11 hamb">
+					<div class=" col-sm-11 col-10 hamb">
 						<div class="hamburger hamburger--collapse">
 							<div class="hamburger-box">
 								<div class="hamburger-inner"></div>
 							</div>
 						</div>
 					</div>
-					<ul class="col-1 social">
+					<ul class="col-2 col-sm-1 social">
 						<li class="social-item"><a href="https://www.facebook.com/groups/713855062085004/" target="_blank" class="social-link"><img src="<?php echo $filePath ?>/assets/img/facebook-square.svg" alt=""></a></li>
 					</ul>
 				</div>
 				<ul class="row main-nav">
-					<li class="col-12 offset-lg-1 col-lg-3 col-md-4 col-sm-4 about" data-mfp-src="#about"><p href="#">Про нас</p></li>
-					<li class="col-12 col-sm-4" data-mfp-src="#activities"><p href="#">Наша робота</p></li>
-					<li class="col-12 col-sm-4" data-mfp-src="#about"><p href="#">Ще якась інфа</p></li>
+					<li class="col-12 offset-lg-1 col-lg-3 col-md-4 col-sm-4 mfp-src" data-mfp-src="#about"><p>Про нас</p></li>
+					<li class="col-12 col-sm-4 mfp-src" data-mfp-src="#activities"><p>Наша робота</p></li>
+					<li class="col-12 col-sm-4"><a href="<?php 	$category_id = get_cat_ID( 'Без категорії' ); echo get_category_link( $category_id ); ?>">Новини</a></li>
 				</ul>
 			</div>
 		</div>

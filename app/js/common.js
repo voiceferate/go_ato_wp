@@ -19,7 +19,7 @@ $(function() {
     })
     
 
-    $('.main-nav li').magnificPopup({
+    $('.mfp-src').magnificPopup({
         type: 'inline',
         closeOnContentClick: true
     });

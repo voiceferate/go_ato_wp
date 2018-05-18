@@ -22,6 +22,11 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .logo
+    div
+      width: 120px
+      margin: 0 auto
+
   .nav-menu
     text-align: center
 
@@ -49,6 +54,35 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  header.container-fluid
+    padding: 0
+    .navigation
+      padding: 0
+      li
+        p
+          font-size: 22px;
+          line-height: 60px;
+          margin-bottom: 0
+      .hamb
+        padding-left: 30px
+      .social
+        padding-right: 10px;
+        text-align: -webkit-right;
+
+
+  .logo
+    position: absolute
+    z-index: 300
+    width: 84px
+    top: 0px
+    left: 50%
+    transform: translateX(-42px)
+    div
+      margin: 0
+      width: 53px
+    img.img-responsive
+      margin-top: 5px
+
   .header-mnu
     display: none
 
@@ -100,6 +134,38 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+  header.container-fluid
+    padding: 0
+    .navigation
+      padding: 0
+      li
+        p
+          font-size: 17px;
+          line-height: 38px;
+          margin-bottom: 0
+      .hamb
+        padding-left: 10px
+      .social
+        padding-right: 10px;
+        text-align: -webkit-right;
+
+
+  .logo
+    position: absolute
+    z-index: 300
+    width: 84px
+    top: 0px
+    left: 50%
+    transform: translateX(-42px)
+    div
+      margin: 0
+      width: 53px
+    img.img-responsive
+      margin-top: 5px
+  
+
+
+
   .post
     margin: 0
 
