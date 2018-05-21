@@ -54,20 +54,18 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
-  // header.container-fluid
-  //   padding: 0
-  //   .navigation
-  //     padding: 0
-  //     li
-  //       p,a
-  //         font-size: 22px;
-  //         line-height: 60px;
-  //         margin-bottom: 0
-  //     .hamb
-  //       padding-left: 30px
-  //     .social
-  //       padding-right: 10px;
-  //       text-align: -webkit-right;
+  header.container-fluid
+    .navigation
+      li
+        p,a
+          font-size: 22px
+          line-height: 60px
+          margin-bottom: 0
+      .hamb
+        padding: 0
+      .social
+        padding: 0
+        text-align: center
 
 
   .logo
@@ -132,22 +130,33 @@
       font-size: 20px
       font-family: $secondary-font
 
+
+  .connect-btn
+    margin-bottom: 20px
+  .partners-title
+    font-size: 13px
+    letter-spacing: 0
+
 // ≥576px
 +media-breakpoint-down(xs)
-  // header.container-fluid
-  //   padding: 0
-  //   .navigation
-  //     padding: 0
-  //     li
-  //       p
-  //         font-size: 17px;
-  //         line-height: 38px;
-  //         margin-bottom: 0
-  //     .hamb
-  //       padding-left: 10px
-  //     .social
-  //       padding-right: 10px;
-  //       text-align: -webkit-right;
+  header.container-fluid
+    .navigation
+      li
+        p,a
+          font-size: 17px
+          line-height: 38px
+          margin-bottom: 0
+      .hamb
+        padding: 0
+      .social
+        padding: 0
+        text-align: center
+
+
+  .social-item
+    a
+      line-height: 60px !important
+
 
 
   .logo
@@ -191,10 +200,18 @@
       width: initial
       max-width: initial
   
+  .partners.container-fluid
+    padding: 0
+    .container
+      .col-6
+        padding-left: 10px
+        padding-right: 10px
+
   .connect-btn
     margin-bottom: 20px
   .partners-title
-    font-size: 16px
+    font-size: 13px
+    letter-spacing: 0
 
   .sidebar-item
     margin-bottom: 20px

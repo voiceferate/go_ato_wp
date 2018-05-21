@@ -51,7 +51,7 @@
 				</a>
 			</div>
 			<div class="col-lg-9 col-md-12 navigation">
-				<div class="row no-gutters navigation-top">
+				<div class="row navigation-top">
 					<div class="col-11 col-sm-11 col-xs-11 nav-menu">
 						<?php wp_nav_menu([
 							'theme_location' => 'top',

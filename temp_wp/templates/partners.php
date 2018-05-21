@@ -26,12 +26,10 @@
 					while ( $query->have_posts() ): 
 						$query->the_post(); ?>
 								
-							<div class="col-md-3 col-sm-4 col-6">
-								<div class="partners-item" data-partner="<?php echo CFS()->get('partner_link'); ?>">
-									<div class="partners-image"><img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" alt=""></div>
-									<h3 class="partners-title"><?php the_title(); ?></h3>
-									<?php the_content(); ?>
-								</div>
+							<div class="col-md-2 col-sm-3 col-6 partners-item">
+								<div class="partners-image"><img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" alt=""></div>
+								<h3 class="partners-title"><?php the_title(); ?></h3>
+								<?php the_content(); ?>
 							</div>
 
 					<?php endwhile;
